@@ -1,13 +1,85 @@
-<html>
-    <body>
-        <nav>
-            <a> Início </a>
-            <a> Contráte-me </a>
-        </nav>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Imagens/logo.png">
+    <meta charset="UTF-8">
+    <title> Dorzão Produções</title>
+    
 
-        <h1> Meu Portifólio </h1>
+</head>
 
-    </body>
+<body>
+    <div id="popup"> 
+        <div id="conteudopopup">
+            <button id="botaofechar"> ✖ </button>  
+           
+           <h2 id="titulo-conteudo-popup"> título </h2>
+           <img id="imagem-conteudo-popup" src="Imagens/logo.png">
+           <div id="descricao-conteudo-popup"> Descrição lero lero</div>
+           <button id="botao-conteudo-popup"> Vizualizar na página </button>
+           
+        </div>
+    </div>
+    <nav id="menu">
+        
+        <a href="#inicio" class="homepage"> <img id="logo" src="Imagens/logo.png">Dorzão Produções </a> 
+        <a href="#sobremim" class="opc"> Sobre mim </a>
+        <a href="#projetos" class="opc"> Meus Projetos</a>
+        <a href="#contato" class="opc"> Contato </a>
+
+    </nav>
+
+    <h1 id="inicio"> Meu portifólio</h1> 
+    <img src="Imagens/profile.jpg" id="profile"
+    alt="Na foto está Dorzão, ele tem a pele 
+    morena clara, olhos castanhos, cabelo preto, 
+    barba por fazer. Ele está sério. Ele veste 
+    uma camisa social acinzentada e gravata. "/>
+    <main style="display: block;">
+        <section id="sobremim" class="conteiner">
+            <h2 class="subtitulo"> Sobre mim </h2> <br>
+            <p>
+                <label style="font-size: 30px; text-decoration: solid; margin-left: 22px;">M</label>inha 
+                história com a tecnologia começa na infância, onde eu amava video-games, e sonhava em um dia 
+                poder criar meu própio jogo. <br>
+                Em meiados de 2012, conheci um software de pc chamado RPG Maker 
+                onde pude dar início a minha vida de programador. Em 2016, fiz um curso técnico em 
+                informática com foco em desenvolvimento de sistemas e software, e hoje, faço meus projetos 
+                pessoais e busco todos os dias por novas oportunidades de projetos profissionais. O que acha 
+                de trabalharmos juntos?             
+            </p>
+        </section>
+            
+        <section class="conteiner">
+            <h2 class="subtitulo" id="projetos"> Meus Projetos </h2>
+            <div id="catalogo">
+                               
+            </div>
+            <button id="mc"> mais cartoes </button>
+            <button id="bi"> imagem no catalogo</button>
+            
+        </section>
+
+        <section id="contato" class="conteiner">
+            <h2 class="subtitulo"> Contato e Redes Sociais </h2>
+        </section>
+
+        <section id="rodape">
+            © 2023 - Dorzão Produções - Todos os direitos reservados.
+        </section>
+    </main>
+    
+    
+        
+    
+    <script src="scripts.js"></script>
+</body>
+
+
+
+
+
+
 
 </html>
-
