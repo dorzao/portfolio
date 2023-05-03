@@ -1,5 +1,12 @@
 var catalogo = document.querySelector("#catalogo");
-
+document.addEventListener("keyup", (e) => {
+    if (e.key == 'Escape') {
+        document.querySelector('#popup').style.display = 'none';
+        document.activeElement.blur();
+    }
+    
+}
+);
 
 
 const mc = document.querySelector("#mc");
@@ -38,11 +45,12 @@ function criarCartao (Cartao) {
 
 function abrirpopup (titulo, imagem, descImagem, descricao, linkBotao) {
     document.querySelector("#popup").style.display = "flex"
-    document.getElementById("titulo-conteudo-popup").innerText = titulo
+    document.getElementById("titulo-conteudo-popup").innerText = titulo;
     document.getElementById("imagem-conteudo-popup").src = imagem;
     document.getElementById("imagem-conteudo-popup").alt = descImagem;
     document.getElementById("descricao-conteudo-popup").innerText = descricao;
     document.getElementById("botao-conteudo-popup").onclick = () => window.open(linkBotao, '_blank');
+    document.querySelector('#botaofechar').focus();
    
  }
 
@@ -69,6 +77,9 @@ function criarCartaoEmBreve (titulo, imagem, descImagem) {
     novoCartaoEmBreve.append(tarja);
     catalogo.append(novoCartaoEmBreve);
 }
+
+// fechando ao clicar no trasparente do popup
+document.querySelector('#fundo-invisivel').onclick = fecharpopup;
 
 // Criando ação de fechar o popup pelo botão
 const bf = document.querySelector("#botaofechar");

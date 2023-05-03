@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+*::selection {
+    background-color: goldenrod;
+}
+
 body {
     background-color: black;
     z-index: 0;
@@ -136,8 +140,7 @@ p {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    
-    
+       
 }
 
 .imagem-de-cartao {
@@ -162,7 +165,7 @@ p {
     align-self: center;
 }
 
-.cartao:hover {
+.cartao:is(:hover, :focus) {
        
     transition: all .5s;
     transform: rotate3d(0, 1, 0, -15deg);
@@ -188,8 +191,8 @@ p {
     
 }
 
-.cartao-em-breve:hover {
-       
+.cartao-em-breve:is(:focus, :hover){
+    border: 0;
     transition: all .5s;
     transform: scale(1.15);
     background-color: lime;
@@ -231,8 +234,6 @@ p {
     transition: 2s;
     background-color: rgba(50, 0, 0, .5);
     display: none;
-    filter: blur(80);
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -242,20 +243,35 @@ p {
 
 }
 
+#fundo-invisivel {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    opacity: 0;
+    z-index: 4;
+
+}
+
 #conteudopopup {
+    align-items: center;
     border-radius: 1em;
-    text-align: center;
     background-color: rgb(25, 25, 25);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     max-height: 800px;
     min-height: 445px;    
-    max-width: 700px;
+    width: clamp(500px, 80%, 800px);
+    max-width: 80vw;
     min-width: 400px;
     position: absolute;
     height: 80vh;
-    width: 80vw;
     z-index: 5;
-
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    
 }
 
 #botaofechar {
@@ -264,38 +280,41 @@ p {
     font-size: 2em;
     padding: 0 0.1em;
     position: absolute;
-    left: auto;
+    top: 0;
     right: 0;
+    
 }
 
 
 
-#botaofechar:hover {
+#botaofechar:is(:hover, :focus) {
     background-color: red;
 }
 
 #titulo-conteudo-popup {
-    flex-direction: row;
-    font-size: 3em;
-    margin-bottom: 0.3em;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-
+    text-align: center;
+    font-size: clamp(2em, 2em + 35%, 3em);
+    position: relative;
+    min-height: 15%;
+    max-height: 30%;
+    width: auto;
+    top: clamp(1.5%, 1.5% + .3vh, 2.5%);
+    
 }
 
 #imagem-conteudo-popup {
-    
+    position:relative;
+    min-height: 30%;
+    max-height: 50%;
     width: 80%;
 }
 
 #descricao-conteudo-popup {
-    align-self: self-end;
-    margin-top: 0.5em;
-    
-    min-height: 10em;
-    margin-left: 10%;
-    margin-right: 10%;
+    position: relative;
+    top: clamp(1.5%, 1.5% + 1vh, 2.5%);
+    min-height: 20%;    
+    max-height: 40%;
+    max-width: 80%;
     text-align: justify;
 }
 
@@ -305,13 +324,9 @@ p {
     background-color: gold;
     border-radius: 1em;
     font-size: 1.5em;
-    padding: 0.1em 0.4em;
-    position: absolute;
-    bottom: 5%;
-    left: 32%;
-    right: 32%;
-    
-    
-    
-    
+    position: relative;
+    max-height: 12%;
+    padding: 0 2%;
+    bottom: clamp(1%, 1.4% + 0.01vh, 2.5%);
+        
 }
