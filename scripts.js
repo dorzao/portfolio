@@ -8,6 +8,21 @@ document.addEventListener("keyup", (e) => {
 }
 );
 
+// criando função do menu de hamburger
+var mh = document.querySelector('#menu-hamburger');
+var barra1 = document.querySelector('#barra1');
+var barra2 = document.querySelector('#barra2');
+var barra3 = document.querySelector('#barra3');
+var mi = document.querySelector('#menu-itens');
+mh.onclick = () => acaoMenuHamburger ();
+var aberto = false;
+function acaoMenuHamburger () {
+    mh.classList.toggle('aberto');
+    mi.classList.toggle('aberto');
+    
+    
+}
+
 
 const mc = document.querySelector("#mc");
 
