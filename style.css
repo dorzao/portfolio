@@ -486,7 +486,7 @@ p {
         width: 50vw;
     }
 
-    .opc:is(:hover, :focus) {
+    #menu-itens .opc:is(:hover, :focus) {
         transform: all 1s;
         transform: scale(1.2);
         border: goldenrod solid .1em;
