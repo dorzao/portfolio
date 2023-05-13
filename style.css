@@ -145,6 +145,14 @@ p {
 .conteiner-sobre-mim {
     display: flex;
     flex-wrap: nowrap;
+    background-color: rgba(15, 15, 15, .5);
+    padding: 1em 1em;
+    border-radius: 1em;
+    gap: 3em;
+}
+
+.conteiner-sobre-mim p {
+    width: auto;
 }
 
 .conteiner-sobre-mim img {
