@@ -166,6 +166,14 @@ p {
     margin: auto auto;
 }
 
+#molduras {
+    transform: translateY(-4em);
+}
+
+#pessoa-estudando {
+    transform: translateY(-3.5em);
+}
+
 #catalogo{
     
     background-color: rgb(25, 25, 25);
@@ -286,8 +294,8 @@ p {
 }
 
 .conteiner-contato img{
-    max-width: 9.5vh;
-    max-height: 9.5vh;
+    width: 4em;
+    height: 4em;
 
 }
 
@@ -549,7 +557,7 @@ p {
     #menu-itens {
         font-size: 3em;
         background-color: transparent;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: start;
         height: 100vh;
@@ -572,7 +580,9 @@ p {
     
 
     #menu-itens.aberto {
+        
         transition: all .5s;
+        display: flex;
         transform: translate(-0vw, 50%);
         background-color: rgba(255, 215, 0, .4);
         padding-top: .5em;
@@ -590,6 +600,14 @@ p {
         transform: all 1s;
         transform: scale(1.2);
         border: goldenrod solid .1em;
+    }
+
+    #molduras {
+        transform: translate(0, 0);
+    }
+
+    #pessoa-estudando {
+        transform: translate(0, 0);
     }
     
 }
