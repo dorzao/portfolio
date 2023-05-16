@@ -509,7 +509,7 @@ p {
     }
 
     #menu-hamburger.aberto {
-        transform: translate(-50vh);
+        transform: translate(-50vw, 3vh) scale(3);
         transition: all 0.5s;
         background-color: black;
         align-items: center;
