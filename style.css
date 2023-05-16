@@ -139,10 +139,9 @@ p {
 
 .subtitulo {
     
-    font-size: 40px;
-    padding-top: 57px;
-    padding-bottom: 20px;
-        
+    font-size: 2.5em;
+    padding-top: 1.5em;
+            
 }
 
 .conteiner-sobre-mim {
@@ -428,7 +427,7 @@ p {
 
 .barras {
     position: absolute;
-    background-color: white;
+    background-color: rgba(250, 250, 250, .9);
     width: 55%;
     height: 8%;
     left: auto;
@@ -488,7 +487,14 @@ p {
         
     }
 
-   
+   #menu {
+    height: 4em;
+   }
+
+   #menu img {
+    height: 4em;
+    min-width: 5em;
+   }
 
     #menu-hamburger {
         background-color: transparent;
@@ -496,16 +502,20 @@ p {
         right: 1%;
         display: flex;
         position: absolute;
-        height: 2em;
-        width: 2em;
+        height: 4em;
+        width: 4em;
         z-index: 3;
         
     }
 
     #menu-hamburger.aberto {
-        transform: translate(-50vw);
+        transform: translate(-50vh);
         transition: all 0.5s;
         background-color: black;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     #menu-hamburger.aberto .barras {
@@ -516,7 +526,8 @@ p {
     #menu-hamburger.aberto #barra1 {
         transition: .5s;
         position: absolute;
-        transform: rotate(45deg) translate(.3em, 0.2em);
+        transform: rotate(45deg);
+        margin-top: 33%;
         
     }
 
@@ -528,7 +539,8 @@ p {
 
     #menu-hamburger.aberto #barra3 {
         position: absolute;
-        transform: rotate(-45deg) translate(.3em, -0.2em);
+        transform: rotate(-45deg);
+        margin-bottom: 33%;
         
     }
 
@@ -542,10 +554,10 @@ p {
         justify-content: start;
         height: 100vh;
         width: 50vw;
-        position: absolute;
+        position: fixed;
         transform: translateX(50vw);
         z-index: 2;
-        margin-top: 0;
+        margin: 0 0 0 0;
         
     }
     
