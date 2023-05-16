@@ -273,6 +273,29 @@ p {
     background-color: gold;
 }
 
+.conteiner-contato{
+    background-color: rgba(128, 128, 128, .4);
+    min-height: 10vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1.5vh 1.5vw;
+    gap: 3em;
+    font-size: 1.3em;
+}
+
+.conteiner-contato img{
+    max-width: 9.5vh;
+    max-height: 9.5vh;
+
+}
+
+.conteiner-contato a {
+    margin-left: auto;
+}
+
 #rodape {
     background-color: rgb(25, 25, 25);
     border: solid 3px gold;
