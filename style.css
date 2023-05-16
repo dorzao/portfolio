@@ -131,6 +131,9 @@ p {
     padding-right: 5%;
     min-height: 100vh;
     min-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
     
 }
 
@@ -144,15 +147,20 @@ p {
 
 .conteiner-sobre-mim {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: rgba(15, 15, 15, .5);
     padding: 1em 1em;
     border-radius: 1em;
     gap: 3em;
 }
 
+.recuo{
+    margin-left: 2em;
+}
+
 .conteiner-sobre-mim p {
     width: auto;
+    max-width: 45%;
 }
 
 .conteiner-sobre-mim img {
@@ -438,6 +446,7 @@ p {
     .conteiner-sobre-mim p {
         margin: auto auto;
         width: auto;
+        max-width: 100%;
         text-align: justify;
         
     }
