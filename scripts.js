@@ -14,14 +14,24 @@ var barra1 = document.querySelector('#barra1');
 var barra2 = document.querySelector('#barra2');
 var barra3 = document.querySelector('#barra3');
 var mi = document.querySelector('#menu-itens');
-mh.onclick = () => acaoMenuHamburger ();
-var aberto = false;
+
+mh.onclick = () => acaoMenuHamburger ()
+
+
+
 function acaoMenuHamburger () {
+    if (document.querySelector('#fctxtmh').style.display == 'none') {
+        document.querySelector('#fctxtmh').style.display = 'flex';
+    } else {
+        document.querySelector('#fctxtmh').style.display = 'none'
+    }
+    
     mh.classList.toggle('aberto');
     mi.classList.toggle('aberto');
-    
-    
+        
 }
+
+
 
 
 const mc = document.querySelector("#mc");

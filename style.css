@@ -526,6 +526,15 @@ p {
         margin-bottom: auto;
     }
 
+    #menu-hamburger.aberto #fctxtmh {
+        display: contents;
+    }
+
+    #menu-hamburger.aberto #abtxtmh {
+        display: none;
+    }
+
+
     #menu-hamburger.aberto .barras {
         transition: 1s;
         background-color: red;
