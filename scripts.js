@@ -28,6 +28,7 @@ function acaoMenuHamburger () {
     
     mh.classList.toggle('aberto');
     mi.classList.toggle('aberto');
+    mh.focus()
         
 }
 
