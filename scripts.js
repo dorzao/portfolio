@@ -18,7 +18,6 @@ var mi = document.querySelector('#menu-itens');
 mh.onclick = () => acaoMenuHamburger ()
 
 
-
 function acaoMenuHamburger () {
     if (document.querySelector('#fctxtmh').style.display == 'none') {
         document.querySelector('#fctxtmh').style.display = 'flex';
