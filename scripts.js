@@ -111,6 +111,16 @@ const bf = document.querySelector("#botaofechar");
 bf.onclick = fecharpopup;
 
 
+// Criando cartão da página do catalisa em si
+var pac1 = new Cartao();
+pac1.id = 'pac1';
+pac1.titulo = 'Gerador de currículo';
+pac1.imagem = 'Imagens/curriculo.png';
+pac1.descImagem = 'Demonstrações dos modelos de gerador de currículo';
+pac1.descricao = 'Um projeto que gera curriculos no modelo ats, com formulário, vizualizador e gerador de PDF.';
+pac1.linkBotao = 'https://gerador-de-curriculo-ats.vercel.app/';
+criarCartao(pac1);
+
 // Criando o cartão da digix melhorado
 var cdm = new Cartao();
 cdm.id = 'cdm';
@@ -136,7 +146,7 @@ var ctg = new Cartao();
 ctg.id = 'ctg';
 ctg.imagem = 'Imagens/casetecnicogama.png'
 ctg.descImagem = 'folder view de uma página do github';
-ctg.titulo = 'Case Técnico Gama Academy'
+ctg.titulo = 'Case Gama Academy'
 ctg.descricao = ' Case técnico com alguns exercícios sugeridos, sendo o sexto um mini sistema de votação. \n O projeto foi criado em java, na ide do Eclipse, e contempra a possibilidade e adição de novos candidatos a votar, mostra número de votos, porcentagem, por candidato e também até os dados referente aos votos nulos. '
 ctg.linkBotao = 'https://github.com/dorzao/EstudosERevisoesJava/tree/main/CasosDeUsoGama';
 criarCartao(ctg);
@@ -150,16 +160,6 @@ pac.descImagem = 'Ricky com uma espressão sarcástica.';
 pac.descricao = 'Aqui é basicamente o projeto do catalisa rodando. Funcionamento do sorteio e descrição de personagens na prática';
 pac.linkBotao = 'https://dorzao.github.io/desafio_catalisa/';
 criarCartao(pac);
-
-// Criando cartão da página do catalisa em si
-var pac1 = new Cartao();
-pac1.id = 'pac1';
-pac1.titulo = 'Página catalisa';
-pac1.imagem = 'Imagens/paginacatalisa.png';
-pac1.descImagem = 'Ricky com uma espressão sarcástica.';
-pac1.descricao = 'Aqui é basicamente o projeto do catalisa rodando. Funcionamento do sorteio e descrição de personagens na prática';
-pac1.linkBotao = 'https://dorzao.github.io/desafio_catalisa/';
-criarCartao(pac1);
 
 criarCartaoEmBreve('web-pizzaria em construção', 'Imagens/pizza.png', 'pizza de peperon com muitos temperos');
 
